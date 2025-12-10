@@ -2,14 +2,33 @@ import { MapPin, Clock, Check } from "lucide-react";
 
 const areas = [
   {
-    name: "Kanjirappally",
-    description: "Main town and surrounding areas",
-    features: ["Town center", "Chirakkadavu", "Erumely Road", "Surrounding villages"],
+    name: "Chotty",
+    description: "Town and nearby localities",
+    features: [
+      "Chotty",
+      "Parathodu",
+      "Velichiyani",
+      "Triveni",
+      "Mangapara",
+      "Chittady",
+    ],
   },
   {
-    name: "Mundakayam",
+    name: "Kanjirappally",
+    description: "Main town and surrounding areas",
+    features: [
+      "Kanjirappally",
+      "26 mile",
+      "Erumely Road",
+      "Podimattam",
+      "1st mile",
+      "Koovapally",
+    ],
+  },
+  {
+    name: "Ponkunnam",
     description: "Town and nearby localities",
-    features: ["Town center", "Peruvanthanam", "Kuttikad", "Surrounding areas"],
+    features: ["Ponkunnam", "Chirakadav"],
   },
 ];
 
@@ -27,7 +46,8 @@ export const DeliveryLocations = () => {
               Delivery Locations
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We currently deliver fresh fish to the following areas in Kottayam District, Kerala.
+              We currently deliver fresh fish to the following areas in Kottayam
+              District, Kerala.
             </p>
             <div className="w-20 h-1 gradient-ocean mx-auto rounded-full mt-4" />
           </div>
@@ -36,7 +56,7 @@ export const DeliveryLocations = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-stretch">
             {/* Map visual */}
             <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border relative min-h-[300px]">
-              <img 
+              <img
                 src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop"
                 alt="Kerala map illustration"
                 className="w-full h-full object-cover opacity-80"
@@ -45,7 +65,9 @@ export const DeliveryLocations = () => {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center text-primary-foreground">
                   <MapPin className="w-16 h-16 mx-auto mb-4 animate-bounce" />
-                  <h3 className="font-serif text-2xl font-bold">Kottayam District</h3>
+                  <h3 className="font-serif text-2xl font-bold">
+                    Kottayam District
+                  </h3>
                   <p className="text-primary-foreground/80">Kerala, India</p>
                 </div>
               </div>
@@ -54,7 +76,7 @@ export const DeliveryLocations = () => {
             {/* Areas list */}
             <div className="space-y-6">
               {areas.map((area) => (
-                <div 
+                <div
                   key={area.name}
                   className="bg-card rounded-2xl p-6 shadow-lg border border-border hover:shadow-xl transition-shadow"
                 >
@@ -71,7 +93,10 @@ export const DeliveryLocations = () => {
                       </p>
                       <ul className="grid grid-cols-2 gap-2">
                         {area.features.map((feature) => (
-                          <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
+                          <li
+                            key={feature}
+                            className="flex items-center gap-2 text-sm text-muted-foreground"
+                          >
                             <Check className="w-4 h-4 text-seafoam" />
                             {feature}
                           </li>
@@ -86,7 +111,9 @@ export const DeliveryLocations = () => {
               <div className="bg-seafoam-light rounded-2xl p-6 border border-seafoam/30">
                 <div className="flex items-center gap-3 mb-3">
                   <Clock className="w-6 h-6 text-primary" />
-                  <h4 className="font-semibold text-foreground">Delivery Timing</h4>
+                  <h4 className="font-semibold text-foreground">
+                    Delivery Timing
+                  </h4>
                 </div>
                 <p className="text-muted-foreground">
                   Every Sunday, 7:00 AM - 12:00 PM
@@ -100,7 +127,8 @@ export const DeliveryLocations = () => {
 
           {/* Expansion note */}
           <p className="text-center text-muted-foreground mt-8 text-sm">
-            Don't see your area? Contact us – we may be able to arrange delivery!
+            Don't see your area? Contact us – we may be able to arrange
+            delivery!
           </p>
         </div>
       </div>

@@ -24,8 +24,8 @@ export const Footer = () => {
           <div className="grid md:grid-cols-3 gap-12 mb-12">
             {/* Brand */}
             <div>
-              <a 
-                href="#home" 
+              <a
+                href="#home"
                 className="flex items-center gap-2 mb-4"
                 onClick={(e) => {
                   e.preventDefault();
@@ -40,8 +40,9 @@ export const Footer = () => {
                 </span>
               </a>
               <p className="text-background/70 leading-relaxed">
-                Fresh fish delivered to your doorstep every Sunday. 
-                Serving Kanjirappally and Mundakayam with the finest catch from Kerala's harbours.
+                Fresh fish delivered to your doorstep every Sunday. Serving
+                Kanjirappally and Mundakayam with the finest catch from Kerala's
+                harbours.
               </p>
             </div>
 
@@ -68,19 +69,25 @@ export const Footer = () => {
 
             {/* Contact Info */}
             <div>
-              <h4 className="font-serif text-lg font-bold mb-4">Contact Info</h4>
+              <h4 className="font-serif text-lg font-bold mb-4">
+                Contact Info
+              </h4>
               <div className="space-y-3 text-background/70">
                 <p>
-                  <span className="text-background">Address:</span><br />
-                  Kanjirappally, Kottayam District<br />
+                  <span className="text-background">Address:</span>
+                  <br />
+                  Kanjirappally, Kottayam District
+                  <br />
                   Kerala, India
                 </p>
                 <p>
-                  <span className="text-background">Phone:</span><br />
-                  +91 98765 43210
+                  <span className="text-background">Phone:</span>
+                  <br />
+                  +91 9048667052
                 </p>
                 <p>
-                  <span className="text-background">Email:</span><br />
+                  <span className="text-background">Email:</span>
+                  <br />
                   orders@fishermanbasket.com
                 </p>
               </div>
@@ -90,10 +97,12 @@ export const Footer = () => {
           {/* Bottom bar */}
           <div className="pt-8 border-t border-background/20 flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-background/60 text-sm">
-              © {new Date().getFullYear()} Fisherman Basket. All rights reserved.
+              © {new Date().getFullYear()} Fisherman Basket. All rights
+              reserved.
             </p>
             <p className="text-background/60 text-sm flex items-center gap-1">
-              Made with <Heart className="w-4 h-4 text-coral fill-coral" /> in Kerala
+              Made with <Heart className="w-4 h-4 text-coral fill-coral" /> in
+              Kerala
             </p>
           </div>
         </div>

@@ -2,25 +2,31 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Anitha Thomas",
-    location: "Kanjirappally",
+    name: "Benny Joseph",
+    location: "Chotty",
     rating: 5,
-    comment: "The fish is always so fresh! My family waits for Sunday just for the Fisherman Basket delivery. The Karimeen was exceptional!",
-    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+    comment:
+      "The fish is always so fresh! My family waits for Sunday just for the Fisherman Basket delivery. The Karimeen was exceptional!",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
   },
   {
-    name: "Jose Mathew",
+    name: "Jincemon scaria",
     location: "Mundakayam",
     rating: 5,
-    comment: "Finally, no more early morning market trips! The quality is better than what I used to get, and it comes to my doorstep.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    comment:
+      "Finally, no more early morning market trips! The quality is better than what I used to get, and it comes to my doorstep.",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
   },
   {
-    name: "Sreelakshmi Nair",
+    name: "Jibin antony",
     location: "Kanjirappally",
     rating: 5,
-    comment: "Very reliable service. They always call before delivery and the fish is packed so well. Prices are also very fair.",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+    comment:
+      "Very reliable service. They always call before delivery and the fish is packed so well. Prices are also very fair.",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
   },
 ];
 
@@ -38,7 +44,8 @@ export const Testimonials = () => {
               What Our Customers Say
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Don't just take our word for it – hear from families who enjoy our fresh fish every week.
+              Don't just take our word for it – hear from families who enjoy our
+              fresh fish every week.
             </p>
             <div className="w-20 h-1 gradient-ocean mx-auto rounded-full mt-4" />
           </div>
@@ -46,13 +53,13 @@ export const Testimonials = () => {
           {/* Testimonials grid */}
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div 
+              <div
                 key={index}
                 className="bg-card rounded-2xl p-8 shadow-lg border border-border hover:shadow-xl transition-all duration-300 hover:-translate-y-1 relative"
               >
                 {/* Quote icon */}
                 <Quote className="absolute top-6 right-6 w-10 h-10 text-seafoam-light" />
-                
+
                 {/* Stars */}
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
@@ -67,14 +74,18 @@ export const Testimonials = () => {
 
                 {/* Author */}
                 <div className="flex items-center gap-4">
-                  <img 
+                  <img
                     src={testimonial.avatar}
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-cover border-2 border-seafoam"
                   />
                   <div>
-                    <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
+                    <h4 className="font-semibold text-foreground">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      {testimonial.location}
+                    </p>
                   </div>
                 </div>
               </div>
