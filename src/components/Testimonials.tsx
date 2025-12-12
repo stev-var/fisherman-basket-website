@@ -1,4 +1,7 @@
 import { Star, Quote } from "lucide-react";
+import benny from "@/assets/avatars/benny.jpg";
+import jince from "@/assets/avatars/jince.jpg";
+import jibin from "@/assets/avatars/jibin.jpg";
 
 const testimonials = [
   {
@@ -7,8 +10,7 @@ const testimonials = [
     rating: 5,
     comment:
       "The fish is always so fresh! My family waits for Sunday just for the Fisherman Basket delivery. The Karimeen was exceptional!",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    avatar: benny,
   },
   {
     name: "Jincemon scaria",
@@ -16,8 +18,7 @@ const testimonials = [
     rating: 5,
     comment:
       "Finally, no more early morning market trips! The quality is better than what I used to get, and it comes to my doorstep.",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    avatar: jince,
   },
   {
     name: "Jibin antony",
@@ -25,8 +26,7 @@ const testimonials = [
     rating: 5,
     comment:
       "Very reliable service. They always call before delivery and the fish is packed so well. Prices are also very fair.",
-    avatar:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    avatar: jibin,
   },
 ];
 
