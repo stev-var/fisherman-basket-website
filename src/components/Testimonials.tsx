@@ -14,7 +14,7 @@ const testimonials = [
   },
   {
     name: "Jincemon scaria",
-    location: "Mundakayam",
+    location: "Chotty",
     rating: 5,
     comment:
       "Finally, no more early morning market trips! The quality is better than what I used to get, and it comes to my doorstep.",
@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     name: "Jibin antony",
-    location: "Kanjirappally",
+    location: "Chotty",
     rating: 5,
     comment:
       "Very reliable service. They always call before delivery and the fish is packed so well. Prices are also very fair.",
