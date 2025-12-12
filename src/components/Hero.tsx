@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 border border-red-400"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 border "
     >
       {/* Background */}
       <div className="absolute inset-0 gradient-ocean opacity-95" />
